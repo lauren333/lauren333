@@ -64,9 +64,6 @@
       </a>
     </td>
   </tr>
-</table>
-
-<table>
   <tr>
     <td>
       <a href="https://github.com/lauren333/taxify-project">
