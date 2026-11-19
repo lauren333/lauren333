@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technical Skills</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: Arial, sans-serif;
+}
+
+.skills-card {
+    width: 1050px;
+    margin: auto;
+    padding: 14px 24px;
+    background: #161b22;
+    border: 1px solid #303d47;
+    border-radius: 12px;
+}
+
+.skills-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 1px solid #222c35;
+}
+.skills-row:last-child { border-bottom: none; }
+
+.skills-label {
+    color: #53a5ca;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #1d3542;
+    color: #b9e0f0;
+    border: 1px solid #31596c;
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.chip img {
+    width: 11px;
+    height: 11px;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+</style>
+</head>
+<body>
+
+<div class="skills-card">
+
+  <div class="skills-row">
+    <div class="skills-label">Languages</div>
+    <div class="chips">
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" onerror="this.remove()">Python</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/c.svg" onerror="this.remove()">C</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cplusplus.svg" onerror="this.remove()">C++</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openjdk.svg" onerror="this.remove()">Java</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" onerror="this.remove()">JavaScript</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/typescript.svg" onerror="this.remove()">TypeScript</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/php.svg" onerror="this.remove()">PHP</span>
+    </div>
+  </div>
+
+  <div class="skills-row">
+    <div class="skills-label">Frontend</div>
+    <div class="chips">
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg" onerror="this.remove()">React</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg" onerror="this.remove()">React Native</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vite.svg" onerror="this.remove()">Vite</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" onerror="this.remove()">HTML5</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" onerror="this.remove()">CSS3</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wordpress.svg" onerror="this.remove()">WordPress</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/advancedcustomfields.svg" onerror="this.remove()">ACF</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/shopify.svg" onerror="this.remove()">Shopify Liquid</span>
+    </div>
+  </div>
+
+  <div class="skills-row">
+    <div class="skills-label">Backend &amp; Databases</div>
+    <div class="chips">
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/flask.svg" onerror="this.remove()">Flask</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fastapi.svg" onerror="this.remove()">FastAPI</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg" onerror="this.remove()">MongoDB</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/firebase.svg" onerror="this.remove()">Firebase</span>
+    </div>
+  </div>
+
+  <div class="skills-row">
+    <div class="skills-label">Tools</div>
+    <div class="chips">
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" onerror="this.remove()">Git</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" onerror="this.remove()">GitHub</span>
+      <span class="chip"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postman.svg" onerror="this.remove()">Postman</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

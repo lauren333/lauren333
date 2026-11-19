@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Header - blue accent</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* NAME: solid white, blue appears only as a short accent bar underneath */
+.name {
+    display: inline-block;
+    margin: 0 0 30px;
+    padding-bottom: 16px;
+    position: relative;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #f0f6fc;
+    /* thin dark edge keeps the white letters defined on a light page */
+    -webkit-text-stroke: 2px #303d47;
+    paint-order: stroke fill;
+}
+.name::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 3px;
+    border-radius: 2px;
+    background: #53a5ca;
+}
+
+/* PILLS: card palette, blue only on small details */
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 6px 20px;
+    background: #161b22;
+    color: #b1bac4;
+    border: 1px solid #303d47;
+    border-radius: 20px;
+    padding: 9px 18px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+/* accent 1: blue separators in the info line */
+.pill .dot { color: #53a5ca; }
+
+/* accent 2: link pills have white text, with the icon in blue */
+.pill.link {
+    color: #f0f6fc;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+.pill img {
+    width: 15px;
+    height: 15px;
+    display: block;
+    /* turns the black icon into #53a5ca */
+    filter: invert(63%) sepia(35%) saturate(700%) hue-rotate(160deg) brightness(92%) contrast(88%);
+}
+</style>
+</head>
+<body>
+
+    <div>
+        <span class="pill" data-out="info">BSc Computer Science <span class="dot">·</span> Madrid, Spain <span class="dot">·</span> Swedish &amp; US Citizen</span>
+    </div>
+
+    <div>
+        <span class="pill link" data-out="email"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg" onerror="this.remove()">EMAIL</span>
+        <span class="pill link" data-out="linkedin"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" onerror="this.remove()">LINKEDIN</span>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: Arial, sans-serif;
+}
+
+.projects-container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* .section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #53a5ca;
+} */
+.section-title {
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #53a5ca;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    display: block;
+    padding: 19px 23px;
+    background: #161b22;
+    border: 1px solid #303d47;
+    border-radius: 12px;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease,
+                border-color 0.2s ease,
+                background 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border-color: #53a5ca;
+    background: #1a2630;
+}
+
+.project-label {
+    color: #53a5ca;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    margin-bottom: 9px;
+}
+
+.project-card h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #f0f6fc;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.tag {
+    background: #1d3542;
+    color: #b9e0f0;
+    border: 1px solid #31596c;
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-size: 10px;
+}
+
+.project-card ul {
+    padding-left: 17px;
+    margin: 0 0 13px;
+    color: #b1bac4;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.project-link {
+    color: #53a5ca;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.new-style {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #e6edf3 45%,
+        #53a5ca 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 35px;
+    text-shadow: 0 4px 18px rgba(83, 165, 202, 0.2);
+}
+
+.new-style1 {
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 35px;
+    text-shadow: 0 4px 18px rgba(83, 165, 202, 0.2);
+}
+
+.name-white-outline {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #ffffff;
+    -webkit-text-stroke: 3px #53a5ca;
+    paint-order: stroke fill;
+}
+
+.name-white-glow {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-shadow:
+        0 0 4px rgba(83, 165, 202, 0.9),
+        0 0 14px rgba(83, 165, 202, 0.75),
+        0 0 32px rgba(83, 165, 202, 0.5),
+        0 0 60px rgba(83, 165, 202, 0.3);
+}
+
+@media (max-width: 700px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="projects-container">
+
+<h2 class="section-title new-style">Lauren Palega</h2>
+<br>
+<h2 class="section-title new-style1">Lauren Palega</h2>
+<br>
+<h2 class="section-title name-white-outline">Lauren Palega</h2>
+<br>
+<h2 class="section-title name-white-glow">Lauren Palega</h2>
+<br>
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="projects-grid">
+
+<a class="project-card"
+   href="https://github.com/lauren333/REPO-NAME"
+   target="_blank">
+
+    <div class="project-label">DEEP LEARNING · <em>CNN OPTIMIZATION ONGOING</em></div>
+    <h3>Real-Time Facial Expression Recognition</h3>
+
+    <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">React</span>
+        <span class="tag">FastAPI</span>
+    </div>
+
+    <ul>
+        <li>Real-time webcam demo for face detection &amp; emotion classification.</li>
+        <li>Designed &amp; Trained PyTorch CNNs: <strong>81.91% RAF-DB</strong> &amp; <strong>70.87% AffectNet</strong> accuracy.</li>
+        <li>Improved model generalization through augmentation, dropout, learning-rate scheduling &amp; class balancing.</li>
+        <li>Fine-tuned YOLO11n for face detection: <strong>98.9% mAP@50</strong>.</li>    
+    </ul>
+    <div class="project-link">EXPLORE PROJECT ↗</div>
+</a>
+
+
+<a class="project-card"
+   href="https://github.com/lauren333/evntly-app"
+   target="_blank">
+
+    <div class="project-label">FULL-STACK DEVELOPMENT</div>
+    <h3>Event Discovery App</h3>
+
+    <div class="tags">
+        <span class="tag">React Native</span>
+        <span class="tag">Flask</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Python</span>
+    </div>
+
+    <ul>
+        <li>Mobile app for discovering events across North America &amp; Europe.</li>
+        <li>Engineered a pipeline to ingest &amp; normalize data from multiple event APIs.</li>
+        <li>Implemented an ML text classifier for automated event metadata tagging.</li>
+        <li>Developed event search, filtering, saving &amp; external calendar integration.</li>
+    </ul>
+
+    <div class="project-link">EXPLORE PROJECT ↗</div>
+</a>
+
+
+<a class="project-card"
+   href="https://github.com/lauren333/taxify-project"
+   target="_blank">
+
+    <div class="project-label">SOFTWARE ENGINEERING</div>
+    <h3>Ride Service Simulation</h3>
+
+    <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">OOP</span>
+        <span class="tag">UML</span>
+    </div>
+
+    <ul>
+        <li>Java simulation of a ride-service system with probabilistic requests and multiple service types.</li>
+        <li>Implemented nearest-available-driver allocation and conditional ride-sharing.</li>
+        <li>Applied Factory, Strategy and Observer patterns for modular system design.</li>
+        <li>Modelled system architecture using UML class, sequence, use-case and domain diagrams.</li>
+    </ul>
+
+    <div class="project-link">EXPLORE PROJECT ↗</div>
+</a>
+
+
+<a class="project-card"
+   href="https://communicationtherapies.org"
+   target="_blank">
+
+    <div class="project-label">WEB DEVELOPMENT</div>
+    <h3>Private Practice Website</h3>
+
+    <div class="tags">
+        <span class="tag">PHP</span>
+        <span class="tag">WordPress</span>
+        <span class="tag">Docker</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">ACF</span>
+    </div>
+
+    <ul>
+        <li>Managed end-to-end website delivery, from requirements gathering to deployment.</li>
+        <li>Developed a custom WordPress theme from scratch using PHP.</li>
+        <li>Integrated ACF to enable dynamic, client-editable website content.</li>
+        <li>Configured domain, DNS &amp; web hosting through GoDaddy.</li>
+    </ul>
+
+    <div class="project-link">VIEW WEBSITE ↗</div>
+</a>
+
+</div>
+</div>
+
+</body>
+</html>
+
+<h2 class="section-title">Technical Skills</h2>
