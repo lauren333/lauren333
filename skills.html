@@ -17,7 +17,7 @@ body {
 .skills-card {
     width: 1050px;
     margin: auto;
-    padding: 14px 24px;
+    padding: 16px 26px;
     background: #161b22;
     border: 1px solid #303d47;
     border-radius: 12px;
@@ -25,46 +25,46 @@ body {
 
 .skills-row {
     display: grid;
-    grid-template-columns: 130px 1fr;
+    grid-template-columns: 170px 1fr;   /* wider so "Backend & Databases" fits on one line */
     align-items: center;
-    gap: 16px;
-    padding: 11px 0;
+    gap: 18px;
+    padding: 13px 0;
     border-bottom: 1px solid #222c35;
 }
 .skills-row:last-child { border-bottom: none; }
 
 .skills-label {
     color: #53a5ca;
-    font-size: 9px;
+    font-size: 11px;          /* was 9px */
     font-weight: bold;
-    letter-spacing: 1.3px;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
 }
 
 .chips {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 7px;
 }
 
 .chip {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     background: #1d3542;
     color: #b9e0f0;
     border: 1px solid #31596c;
     border-radius: 20px;
-    padding: 4px 8px;
+    padding: 5px 11px;
     font-family: Arial, sans-serif;
-    font-size: 10px;
+    font-size: 13px;          /* was 10px */
     font-weight: normal;
     line-height: normal;
 }
 
 .chip img {
-    width: 11px;
-    height: 11px;
+    width: 14px;              /* was 11px */
+    height: 14px;
     display: block;
     filter: brightness(0) invert(1);
 }

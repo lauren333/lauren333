@@ -1,6 +1,6 @@
 <br>
 <h3 align="center">
-  <img src = "./project-cards/title-1.png" width = "400px">
+  <img src = "./project-cards/title-1.png" width = "200px">
 </h3>
 
 <p align="center">
