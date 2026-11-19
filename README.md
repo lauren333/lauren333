@@ -78,6 +78,13 @@
   </tr>
 </table>
 
+<p align="center">
+  <sub><em>Click on a card to visit the project</em></sub>
+  <br>
+  <a href="https://github.com/lauren333?tab=repositories">Browse all repositories ↗</a>
+</p>
+
+
 --- 
 
 <h3 align="left">
