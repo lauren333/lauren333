@@ -37,6 +37,7 @@
   <a href="mailto:laurenpalega333@gmail.com">
     <img src="project-cards/email.png" alt="Email" height="34">
   </a>
+  &nbsp;
   <a href="https://linkedin.com/in/laurenpalega">
     <img src="project-cards/linkedin.png" alt="LinkedIn" height="34">
   </a>
