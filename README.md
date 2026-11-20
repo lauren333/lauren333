@@ -54,7 +54,7 @@
 <table>
   <tr>
     <td>
-      <a href="https://github.com/lauren333/real-time-facial-expression-recognition">
+      <a href="https://github.com/lauren333/real-time-emotion-recognition">
         <img src="./project-cards/project-1.png" width="100%">
       </a>
     </td>
